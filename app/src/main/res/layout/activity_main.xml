@@ -48,10 +48,13 @@
         app:layout_constraintBottom_toTopOf="@+id/btnPastOrders"
         app:layout_constraintStart_toStartOf="@+id/btnPastOrders" />
 
+
     <FrameLayout
         android:id="@+id/fr_wrapper"
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        tools:layout_editor_absoluteX="126dp"
+        tools:layout_editor_absoluteY="127dp">
 
         <com.google.android.material.bottomnavigation.BottomNavigationView
             android:id="@+id/bottomNav"
@@ -63,10 +66,9 @@
             app:itemBackground="@color/teal_700"
             app:itemIconTint="#fff"
             app:itemTextColor="#fff"
-            app:menu="@menu/nav_menu"/>
+            app:menu="@menu/nav_menu" />
 
     </FrameLayout>
-
 
     <Button
         android:id="@+id/btn_settings"
