@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/login"
+        android:icon="@drawable/ic_baseline_home_24"
+        android:title="Home"/>
+
+    <item
+        android:id="@+id/order"
+        android:icon="@drawable/ic_baseline_emoji_food_beverage_24"
+        android:title="Order"
+        />
+
+    <item
+        android:id="@+id/notifications"
+        android:icon="@drawable/ic_baseline_notifications_24"
+        android:title="Notifications"/>
+
+    <item
+        android:id="@+id/trackOrder"
+        android:icon="@drawable/ic_baseline_track_changes_24"
+        android:title="Track Order"/>
+</menu>
+
