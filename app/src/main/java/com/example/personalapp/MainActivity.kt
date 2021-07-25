@@ -6,6 +6,7 @@ import android.os.Bundle
 import android.widget.Button
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
+import kotlinx.android.synthetic.main.activity_main.*
 import kotlinx.android.synthetic.main.card_layout.*
 
 class MainActivity : AppCompatActivity() {
@@ -20,6 +21,10 @@ class MainActivity : AppCompatActivity() {
 
         btn.setOnClickListener(){
             val intent = Intent(this, FoodView::class.java)
+            startActivity(intent)
+        }
+        btn_settings.setOnClickListener {
+            val intent = Intent(this, SettingsActivity::class.java)
             startActivity(intent)
         }
     }

@@ -38,6 +38,7 @@ class LoginActivity : AppCompatActivity() {
                 deliverNotification()
                 tv_username.setVisibility(View.INVISIBLE)
                 tv_password.setVisibility(View.INVISIBLE)
+                tv_otp.setVisibility(View.VISIBLE)
                 et_otp.setVisibility(View.VISIBLE)
                 et_username.setVisibility(View.INVISIBLE)
                 et_password.setVisibility(View.INVISIBLE)
@@ -56,12 +57,14 @@ class LoginActivity : AppCompatActivity() {
                 startActivity(Intent(this,MainActivity::class.java))
                 tv_username.setVisibility(View.VISIBLE)
                 tv_password.setVisibility(View.VISIBLE)
+                tv_otp.setVisibility(View.INVISIBLE)
                 et_otp.setVisibility(View.INVISIBLE)
                 et_username.setVisibility(View.VISIBLE)
                 et_password.setVisibility(View.VISIBLE)
                 et_otp.setVisibility(View.INVISIBLE)
                 bt_otp.setVisibility(View.VISIBLE)
                 bt_login.setVisibility(View.INVISIBLE)
+                et_otp.getText().clear()
             }
             else{
                 Toast.makeText(this, "Please Enter valid OTP", Toast.LENGTH_SHORT).show()
